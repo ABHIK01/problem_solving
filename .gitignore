@@ -1,0 +1,17 @@
+# Compiled class files
+*.class
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Build artifacts
+target/
+build/
+dist/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
