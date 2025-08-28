@@ -18,6 +18,7 @@ public class OrderBuilder {
     double totalAmount;
     
     // Optional fields with default values
+    String customerEmail;
     String shippingAddress;
     String billingAddress;
     String discountCode;
@@ -54,6 +55,11 @@ public class OrderBuilder {
     }
     
     // Optional field setters (fluent interface)
+    public OrderBuilder customerEmail(String customerEmail) {
+        this.customerEmail = customerEmail;
+        return this;
+    }
+    
     public OrderBuilder shippingAddress(String shippingAddress) {
         this.shippingAddress = shippingAddress;
         return this;

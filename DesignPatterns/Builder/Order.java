@@ -17,6 +17,7 @@ public class Order {
     private final double totalAmount;
     
     // Optional fields
+    private final String customerEmail;
     private final String shippingAddress;
     private final String billingAddress;
     private final String discountCode;
@@ -33,6 +34,7 @@ public class Order {
         this.customerId = builder.customerId;
         this.items = new ArrayList<>(builder.items);
         this.totalAmount = builder.totalAmount;
+        this.customerEmail = builder.customerEmail;
         this.shippingAddress = builder.shippingAddress;
         this.billingAddress = builder.billingAddress;
         this.discountCode = builder.discountCode;
@@ -49,6 +51,7 @@ public class Order {
     public String getCustomerId() { return customerId; }
     public List<OrderItem> getItems() { return new ArrayList<>(items); }
     public double getTotalAmount() { return totalAmount; }
+    public String getCustomerEmail() { return customerEmail; }
     public String getShippingAddress() { return shippingAddress; }
     public String getBillingAddress() { return billingAddress; }
     public String getDiscountCode() { return discountCode; }
